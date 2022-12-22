@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tea_Cozy</title>
+  </head>
+
+  <style>
+    body {
+      background-color: black;
+      font-family: Helvetica;
+      font-size: 22px;
+      color: seashell;
+      opacity: 0.9;
+    }
+
+    /* header */
+    header {
+      height: 69px;
+      border-bottom: 1px solid seashell;
+      display: fixed;
+    }
+
+    .logo {
+      height: 50px;
+      margin-left: 10px;
+    }
+    
+    nav {
+      float: right;
+      margin: 10px 10px;
+    }
+
+    nav ul li {
+      display: inline-flex;
+      padding-bottom: 40px;
+      text-decoration: none;
+    }
+
+    nav ul li a {
+      color: seashell;
+    }
+
+    /* mission section */
+    .mission {
+      background-image: url('https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg');
+      height: 700px;
+      width: 1200px;
+      margin: 70px auto 0px auto;
+      display: flex;
+      align-items: center;
+    }
+
+    .mission div {
+      background-color: black;
+      width: 100%;
+      text-align: center;
+    }
+    /* tea/menu section */
+    .tea {
+      display: inline;
+      margin-top: 69px;
+      background-color: black;
+      text-align: center;
+      width: 1000px;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .features img {
+      height: 200px;
+      width: 300px;
+      margin: 10px;
+    }
+
+    p {
+      margin-top: 10px;
+    }
+    /* location sections */
+    .locations {
+      background-image: url('https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg');
+      height: 500px;
+      width: 1200px;
+      margin: auto auto;
+      text-align: center;
+    }
+    .locations h2 {
+      margin: 0px;
+      padding-top: 69px;
+    }
+    .locations-container {
+      display: flex;
+      justify-content: center;
+    }
+    .box {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      background-color: black;
+      width: 300px;
+      height: 300px;
+      margin: 0 20px;
+      opacity: 1;
+    }
+    .contact {
+      text-align: center;
+      height: 200px;
+      margin-top: 15px;
+    }
+    footer {
+      text-align: left;
+      margin-left: 20px;
+    }
+
+
+
+
+
+
+
+
+  </style>
+
+  <body>
+    <header>
+      <img
+        class="logo"
+        src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-tea-cozy-logo.png"
+        />
+      <nav>
+        <ul>
+          <li><a href="">Mission</a></li>
+          <li><a href="">Featured Tea</a></li>
+          <li><a href="#">Locations</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="main">
+      <div class="mission">
+        <div>
+          <h2>OUR MISSION</h2>
+          <h4>
+            Handpicked, Artisinally Curated, Free Range, Sustainable, Small
+            Batch, Fair Trade, Organic Tea
+          </h4>
+        </div>
+      </div>
+    </section>
+
+    <section class="tea">
+      <h2>Tea of the Month</h2>
+      <h4>What's steeping at the Tea Cozy?</h4>
+      <div class="features">
+        <div>
+          <img
+            src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-berryblitz.jpg"
+          />
+          <p>Fall Berry Blitz Tea</p>
+        </div>
+        <div>
+          <img
+            src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-spiced-rum.jpg"
+          />
+          <p>Spiced Rum Tea</p>
+        </div>
+        <div>
+          <img
+            src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-donut.jpg"
+          />
+          <p>Seasonal Donuts</p>
+        </div>
+        <div>
+          <img
+            src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-myrtle-ave.jpg"
+          />
+          <p>Myrtle Ave Tea</p>
+        </div>
+        <div>
+          <img
+            src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-bedford-bizarre.jpg"
+          />
+          <p>Bedford Bizarre Tea</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="locations">
+      <h2>Locations</h2>
+      <div class="locations-container">
+        <div class="box">
+          <h2>Downtown</h2>
+          <p>384 West 4th St</p>
+          <p>Suit 108</p>
+          <p>Portland, Maine</p>
+        </div>
+
+        <div class="box">
+          <h2>East Bayside</h2>
+          <p>3433 Phisherman's Avenue</p>
+          <p>(Northwest Corner)</p>
+          <p>Portland, Maine</p>
+        </div>
+
+        <div class="box">
+          <h2>Oakdale</h2>
+          <p>515 Crescent Avenue</p>
+          <p>Second Floor</p>
+          <p>Portland, Maine</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="contact">
+        <h2>The Tea Cozy</h2>
+        <h5>contact@theteacozy.com</h5>
+        <h5>917-555-8904</h5>
+    </div>
+
+    <footer>
+        copyright@the tea cozy 2017
+    </footer>
+
+  </body>
+</html>
